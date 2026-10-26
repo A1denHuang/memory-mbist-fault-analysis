@@ -1,6 +1,6 @@
 QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
 Start time: 02:34:30 on Oct 26,2026
-vlog -sv C:\Users\15354\Documents\ChatGPT\Engineer, HIG HBM Product & System Engineering\mbist_project\tb\fault_cfg.sv C:\Users\15354\Documents\ChatGPT\Engineer, HIG HBM Product & System Engineering\mbist_project\tb\tb_random_cfg.sv 
+vlog -sv tb\fault_cfg.sv tb\tb_random_cfg.sv 
 -- Compiling package fault_config_pkg
 -- Compiling module tb_random_cfg
 -- Importing package fault_config_pkg
@@ -9,11 +9,11 @@ Top level modules:
 	tb_random_cfg
 End time: 02:34:30 on Oct 26,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
-Reading D:/Questasim/tcl/vsim/pref.tcl
+Reading <tool>/pref.tcl
 
 # 10.7c
 
-# vsim -c -onfinish stop tb_random_cfg "+SEED=20261026" "+COUNT=3" "+OUT=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/native_random.cfg" -do "onerror {quit -code 1}; run -all; quit -code 0" 
+# vsim -c -onfinish stop tb_random_cfg "+SEED=20261026" "+COUNT=3" "+OUT=results_questa/native_random.cfg" -do "onerror {quit -code 1}; run -all; quit -code 0" 
 # Start time: 02:34:31 on Oct 26,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim-64
@@ -36,10 +36,10 @@ Reading D:/Questasim/tcl/vsim/pref.tcl
 # onerror {quit -code 1}
 #  Warning: onerror command for use within macro
 #  run -all
-# ** Note: $finish    : C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_random_cfg.sv(19)
+# ** Note: $finish    : tb/tb_random_cfg.sv(19)
 #    Time: 0 ns  Iteration: 0  Instance: /tb_random_cfg
-# Break at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_random_cfg.sv line 19
-# Stopped at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_random_cfg.sv line 19
+# Break at tb/tb_random_cfg.sv line 19
+# Stopped at tb/tb_random_cfg.sv line 19
 #  quit -code 0
 # End time: 02:34:32 on Oct 26,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,0 +1,2 @@
+PASS coupling probe seed=200012 reads=3060
+tb\tb_coupling_probe.sv:54: $finish called at 153000000 (1ps)

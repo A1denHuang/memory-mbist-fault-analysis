@@ -4,12 +4,15 @@ Simulator: iverilog. All 283 RTL simulations passed the operation and failure-tu
 Random regression: 60 independent seeds, each with 1-3 faults, both modes.
 Healthy memory: 2560 accepted operations, zero failures, pass=1 in both modes.
 Model-only unit tests: 51 checks passed (see fault_model_units.log).
+Verification boundary: reference sequence/state are separate, but both memory instances use sram_fault_model. The scoreboard verifies controller behavior; fault semantics are checked by the 51 model-only tests, not independently proven by the scoreboard.
 Assertion status: portable procedural equivalents passed; native SVA not executed.
 Functional bins: 12/12 element x mode; 32/32 row/array boundary addresses.
 
 ## Blind holdout
 
 Top-choice exact type accuracy: **38/55 = 69.09%**.
+SAF0/TF_UP equivalence-class accuracy: **43/55 = 78.18%**.
+Only SAF0 and TF_UP are merged into SAF0_OR_TF_UP; every other label remains distinct. All samples remain in the denominator. This is a limited equivalence adjustment, not a claim that all other March signatures are uniquely identifiable.
 Candidate-set inclusion: **55/55 = 100.00%** (not exact-type accuracy).
 Balanced, independent single-fault holdout; 5 samples/type by default. Classifier input contains fail CSVs only. Mixed-fault regression is a controller correctness test, not a classification benchmark.
 DRF no-failure observations remain in the denominator. No-fail does not prove no fault.
@@ -93,6 +96,7 @@ Counts are observed fail events, not theoretical coverage percentages. Zero M0 i
 - AF remaps one victim to one aggressor; not all real decoder open/multiple-select faults are modeled.
 - For ambiguous cases, run a targeted aggressor-toggle test, independent address-isolation test, changed initialization, or pause-time sweep.
 - DRF threshold=10000 cycles is longer than base test duration; a 12000-cycle pause after M0 sensitizes it.
+- Additional observations are evaluated separately: [reviewed development samples](../results/followup/report.md) and [fresh-seed evaluation](../results_followup/report.md). Their improvement is not attributed to March C- alone.
 - Portable runs check behavior procedurally. Native SVA and covergroup results are supplied separately in ../results_questa/; these are not code coverage or synthesis results.
 
 ## Example bitmaps

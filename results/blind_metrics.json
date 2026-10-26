@@ -2,6 +2,14 @@
   "samples": 55,
   "correct": 38,
   "accuracy": 0.6909090909090909,
+  "equivalent_correct": 43,
+  "equivalent_accuracy": 0.7818181818181819,
+  "equivalence_classes": {
+    "SAF0_OR_TF_UP": [
+      "SAF0",
+      "TF_UP"
+    ]
+  },
   "candidate_hits": 55,
   "candidate_inclusion": 1.0
 }

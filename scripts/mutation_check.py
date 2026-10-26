@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 from run import ROOT, command
+from logs import public_log
 
 def main():
     source=(ROOT/'rtl/mbist_controller.sv').read_text()
@@ -32,6 +33,7 @@ def main():
         output=child.stdout+child.stderr
         if child.returncode==0 or 'FATAL' not in output:
             raise AssertionError(f'Mutant escaped: {name}\n{output}')
+        output=public_log(output,ROOT)
         (build/f'{name}.log').write_text(output,encoding='utf-8')
         results.append(dict(mutation=name,status='detected',diagnostic=output.splitlines()[0]))
     (ROOT/'results/mutation_report.json').write_text(json.dumps(results,indent=2),encoding='utf-8')

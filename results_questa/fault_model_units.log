@@ -1,8 +1,8 @@
-Reading D:/Questasim/tcl/vsim/pref.tcl
+Reading <tool>/pref.tcl
 
 # 10.7c
 
-# vsim -c -coverage -onfinish stop -lib work tb_fault_model -do "onerror {quit -code 1}; run -all; coverage report -assert; coverage report -cvg; coverage save {C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/build/units.ucdb}; quit -code 0" 
+# vsim -c -coverage -onfinish stop -lib work tb_fault_model -do "onerror {quit -code 1}; run -all; coverage report -assert; coverage report -cvg; coverage save {results_questa/build/units.ucdb}; quit -code 0" 
 # Start time: 02:43:29 on Oct 26,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim-64
@@ -26,15 +26,15 @@ Reading D:/Questasim/tcl/vsim/pref.tcl
 #  Warning: onerror command for use within macro
 #  run -all
 # PASS fault-model unit checks=51
-# ** Note: $finish    : C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_fault_model.sv(47)
+# ** Note: $finish    : tb/tb_fault_model.sv(47)
 #    Time: 1 ns  Iteration: 0  Instance: /tb_fault_model
-# Break at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_fault_model.sv line 47
-# Stopped at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_fault_model.sv line 47
+# Break at tb/tb_fault_model.sv line 47
+# Stopped at tb/tb_fault_model.sv line 47
 #  coverage report -assert
 # No matches
 #  coverage report -cvg
 # No matches
-#  coverage save {C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/build/units.ucdb}
+#  coverage save {results_questa/build/units.ucdb}
 #  quit -code 0
 # End time: 02:43:30 on Oct 26,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1

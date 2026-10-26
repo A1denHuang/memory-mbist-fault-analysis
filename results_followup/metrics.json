@@ -1,0 +1,19 @@
+{
+  "samples": 55,
+  "baseline_correct": 38,
+  "baseline_accuracy": 0.6909090909090909,
+  "baseline_equivalent_correct": 43,
+  "baseline_equivalent_accuracy": 0.7818181818181819,
+  "assisted_correct": 45,
+  "assisted_accuracy": 0.8181818181818182,
+  "assisted_equivalent_correct": 50,
+  "assisted_equivalent_accuracy": 0.9090909090909091,
+  "equivalence_classes": {
+    "SAF0_OR_TF_UP": [
+      "SAF0",
+      "TF_UP"
+    ]
+  },
+  "probe_cases": 35,
+  "method_sha256": "2de7dbc8f5a66979ad6065380a5555618f991966ebfc2c94a7bed7b4dd2d7660"
+}

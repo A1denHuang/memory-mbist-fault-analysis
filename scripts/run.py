@@ -13,6 +13,7 @@ import re
 import shutil
 import subprocess
 import sys
+from logs import public_log
 
 ROOT = Path(__file__).resolve().parents[1]
 KINDS = {1:'SAF0', 2:'SAF1', 3:'TF_UP', 4:'TF_DOWN', 5:'CFIN', 6:'CFID',
@@ -40,7 +41,7 @@ def compile_tb(build, top, sources, retention=0, simulator='iverilog'):
             command(['vlib', 'work'],cwd=build)
         text=command(['vlog','-work','work','-sv','+define+ENABLE_SVA', *sources,
                  ROOT/'tb/mbist_sva.sv',ROOT/'tb/mbist_coverage.sv'],cwd=build)
-        (build/f'compile_{top}_{retention}.log').write_text(text,encoding='utf-8')
+        (build/f'compile_{top}_{retention}.log').write_text(public_log(text,ROOT),encoding='utf-8')
         return ['vsim','-c','-coverage','-onfinish','stop','-lib','work',top,
                 f'-gRETENTION_CYCLES={retention}'] if top=='tb_mbist' else [
                 'vsim','-c','-coverage','-onfinish','stop','-lib','work',top]
@@ -50,7 +51,7 @@ def compile_tb(build, top, sources, retention=0, simulator='iverilog'):
     if top == 'tb_mbist':
         args += [f'-Ptb_mbist.RETENTION_CYCLES={retention}']
     output=command(args+sources, allow_artifact=product)
-    (build/f'compile_{top}_{retention}.log').write_text(output,encoding='utf-8')
+    (build/f'compile_{top}_{retention}.log').write_text(public_log(output,ROOT),encoding='utf-8')
     return ['vvp',product]
 
 def fault(kind, victim=58, aggressor=12, value=0, trigger=1, retention=10000):
@@ -86,7 +87,7 @@ def main():
         return command(cmd+plusargs)
     text=simulate(micro,[])
     if 'PASS fault-model' not in text: raise RuntimeError(text)
-    (out/'fault_model_units.log').write_text(text,encoding='utf-8')
+    (out/'fault_model_units.log').write_text(public_log(text,ROOT),encoding='utf-8')
     manifest=[]
     def run(name, fs, seed=0, mode=0, pause=False, expected_detection=None, group='directed'):
         directory=cases/name; directory.mkdir(exist_ok=True)
@@ -105,7 +106,7 @@ def main():
         if name in ('clean_diag','SAF1_diag'): plus += [f'+VCD={(directory/"wave.vcd").as_posix()}']
         # Recompile separate Questa work libraries so the pause generic stays local.
         text=(directory/'simulation.log').read_text(encoding='utf-8') if reusable else simulate(retained if pause else base,plus,directory/'coverage.ucdb')
-        (directory/'simulation.log').write_text(text,encoding='utf-8')
+        (directory/'simulation.log').write_text(public_log(text,ROOT),encoding='utf-8')
         if 'PASS seed=' not in text: raise RuntimeError(text)
         summary=dict((k,int(v)) for k,v in re.findall(r'(operations|failures|pass|cycles)=(\d+)',(directory/'summary.txt').read_text()))
         if expected_detection is not None and (summary['failures']>0)!=expected_detection:
@@ -146,9 +147,9 @@ def main():
     if args.simulator=='questa':
         text=command(['vcover','merge',out/'coverage_merged.ucdb',
                       *[p.relative_to(cases) for p in sorted(cases.glob('*/coverage.ucdb'))]],cwd=cases)
-        (out/'coverage_merge.log').write_text(text,encoding='utf-8')
+        (out/'coverage_merge.log').write_text(public_log(text,ROOT),encoding='utf-8')
         text=command(['vcover','report','-cvg','-assert','-details',out/'coverage_merged.ucdb'])
-        (out/'native_coverage.txt').write_text(text,encoding='utf-8')
+        (out/'native_coverage.txt').write_text(public_log(text,ROOT),encoding='utf-8')
     (out/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     with (out/'blind_truth.csv').open('w',newline='',encoding='utf-8') as f:
         w=csv.DictWriter(f,fieldnames=['seed','truth']);w.writeheader();w.writerows(truth)
@@ -159,6 +160,6 @@ def main():
     print(json.dumps(summary,ensure_ascii=False,indent=2),flush=True)
     if not args.no_analysis:
         command([sys.executable,ROOT/'scripts/analyze.py','report','--results',out])
-        print(f'Analysis report: {out / "report.md"}',flush=True)
+        print(public_log(f'Analysis report: {out / "report.md"}',ROOT),flush=True)
 
 if __name__=='__main__': main()

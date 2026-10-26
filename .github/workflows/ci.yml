@@ -19,9 +19,17 @@ jobs:
           python scripts/run.py --seeds 60 --blind-seeds 55
           python scripts/mutation_check.py
           python scripts/audit.py
+      - name: Check causal probe and publication portability
+        run: |
+          python -m unittest discover -s tests -v
+          python scripts/probe.py review --results results
+          python scripts/probe.py benchmark --out results_followup
+          python scripts/publication_check.py
       - name: Publish logs and reports
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: mbist-verification
-          path: results/
+          path: |
+            results/
+            results_followup/

@@ -1,6 +1,6 @@
 QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
 Start time: 02:43:36 on Oct 26,2026
-vcover report -cvg -assert -details C:\Users\15354\Documents\ChatGPT\Engineer, HIG HBM Product & System Engineering\mbist_project\results_questa\coverage_merged.ucdb 
+vcover report -cvg -assert -details results_questa\coverage_merged.ucdb 
 COVERGROUP COVERAGE:
 -----------------------------------------------------------------------------------------------
 Covergroup                                             Metric       Goal    Status               
@@ -265,22 +265,22 @@ Name                 File(Line)                   Failure      Pass
                                                   Count        Count
 --------------------------------------------------------------------
 /tb_mbist/assertions/assert__5
-                     C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/mbist_sva.sv(12)
+                     tb/mbist_sva.sv(12)
                                                         0        283
 /tb_mbist/assertions/assert__4
-                     C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/mbist_sva.sv(11)
+                     tb/mbist_sva.sv(11)
                                                         0        274
 /tb_mbist/assertions/assert__3
-                     C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/mbist_sva.sv(10)
+                     tb/mbist_sva.sv(10)
                                                         0        283
 /tb_mbist/assertions/assert__2
-                     C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/mbist_sva.sv(9)
+                     tb/mbist_sva.sv(9)
                                                         0        283
 /tb_mbist/assertions/assert__1
-                     C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/mbist_sva.sv(8)
+                     tb/mbist_sva.sv(8)
                                                         0        283
 /tb_mbist/assertions/assert__0
-                     C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/mbist_sva.sv(7)
+                     tb/mbist_sva.sv(7)
                                                         0        283
 End time: 02:43:36 on Oct 26,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0

@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from analyze import equivalence_class
 
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -40,6 +41,7 @@ def audit(results):
     assert metrics['samples']==len(scored)>=50
     assert metrics['correct']==sum(c['correct'] for c in scored)
     assert metrics['candidate_hits']==sum(c['candidate_hit'] for c in scored)
+    assert metrics['equivalent_correct']==sum(equivalence_class(c['prediction'])==equivalence_class(c['truth']) for c in scored)
     assert 'checks=51' in (results/'fault_model_units.log').read_text()
     native=results/'native_coverage.txt'
     if native.exists():

@@ -3,6 +3,7 @@ import argparse
 import json
 from pathlib import Path
 from run import ROOT, command, compile_tb
+from logs import public_log
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--seed',type=int,default=20261026)
@@ -31,7 +32,7 @@ def main():
             assert 1<=kind<=11 and 0<=victim<256 and 0<=aggressor<256
             assert kind not in (5,6,7,8) or victim!=aggressor
             assert value in (0,1) and trigger in (0,1) and retention>0
-    (out.parent/'native_random.log').write_text(text,encoding='utf-8')
+    (out.parent/'native_random.log').write_text(public_log(text,ROOT),encoding='utf-8')
     if a.verify_rtl:
         simulator=compile_tb(build,'tb_mbist',[ROOT/'rtl/mbist_controller.sv',
             ROOT/'tb/sram_fault_model.sv',ROOT/'tb/tb_mbist.sv'])
@@ -41,7 +42,7 @@ def main():
                 output=command(simulator+[f'+CFG={path.as_posix()}',f'+SEED={a.seed+index}',f'+STOP={mode}',
                     f'+LOG={prefix.as_posix()}.csv',f'+SUMMARY={prefix.as_posix()}.txt'])
                 assert 'PASS seed=' in output
-                Path(f'{prefix}.log').write_text(output,encoding='utf-8')
+                Path(f'{prefix}.log').write_text(public_log(output,ROOT),encoding='utf-8')
     (out.parent/'native_random_summary.json').write_text(json.dumps(dict(
         generator='SystemVerilog fault_cfg.randomize() in Questa',seeds=a.batch,
         initial_seed=a.seed,constraint_checks='PASS',

@@ -1,8 +1,8 @@
-Reading D:/Questasim/tcl/vsim/pref.tcl
+Reading <tool>/pref.tcl
 
 # 10.7c
 
-# vsim -c -coverage -onfinish stop -lib work tb_mbist "+CFG=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_050_diag/faults.cfg" "+LOG=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_050_diag/fails.csv" "+SUMMARY=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_050_diag/summary.txt" "+SEED=50" "+STOP=0" -do "onerror {quit -code 1}; run -all; coverage report -assert; coverage report -cvg; coverage save {C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_050_diag/coverage.ucdb}; quit -code 0" -gRETENTION_CYCLES=0 
+# vsim -c -coverage -onfinish stop -lib work tb_mbist "+CFG=results_questa/cases/random_050_diag/faults.cfg" "+LOG=results_questa/cases/random_050_diag/fails.csv" "+SUMMARY=results_questa/cases/random_050_diag/summary.txt" "+SEED=50" "+STOP=0" -do "onerror {quit -code 1}; run -all; coverage report -assert; coverage report -cvg; coverage save {results_questa/cases/random_050_diag/coverage.ucdb}; quit -code 0" -gRETENTION_CYCLES=0 
 # Start time: 02:40:14 on Oct 26,2026
 # ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim-64
@@ -26,10 +26,10 @@ Reading D:/Questasim/tcl/vsim/pref.tcl
 #  Warning: onerror command for use within macro
 #  run -all
 # PASS seed=50 stop=0 operations=2560 failures=48
-# ** Note: $finish    : C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_mbist.sv(118)
+# ** Note: $finish    : tb/tb_mbist.sv(118)
 #    Time: 38470 ns  Iteration: 1  Instance: /tb_mbist
-# Break at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_mbist.sv line 118
-# Stopped at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_mbist.sv line 118
+# Break at tb/tb_mbist.sv line 118
+# Stopped at tb/tb_mbist.sv line 118
 #  coverage report -assert
 # 
 # TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 6
@@ -38,7 +38,7 @@ Reading D:/Questasim/tcl/vsim/pref.tcl
 # 
 # TOTAL COVERGROUP COVERAGE: 37.50%  COVERGROUP TYPES: 2
 # 
-#  coverage save {C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_050_diag/coverage.ucdb}
+#  coverage save {results_questa/cases/random_050_diag/coverage.ucdb}
 #  quit -code 0
 # End time: 02:40:16 on Oct 26,2026, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 1

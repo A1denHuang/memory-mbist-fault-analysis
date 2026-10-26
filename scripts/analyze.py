@@ -13,6 +13,10 @@ import pandas as pd
 REQUIRED=['seed','addr','row','col','element','op','expected','actual']
 LABELS=['SAF0','SAF1','TF_UP','TF_DOWN','CFIN','CFID','CFST','AF','ROW','COL','DRF','NONE','UNKNOWN']
 
+def equivalence_class(label):
+    # Fixed before evaluation; no grouping of coupling errors or silent DRF.
+    return 'SAF0_OR_TF_UP' if label in ('SAF0','TF_UP') else label
+
 def read_fails(path):
     frame=pd.read_csv(path)
     if list(frame.columns)!=REQUIRED: raise ValueError(f'{path}: incorrect CSV columns')
@@ -103,9 +107,11 @@ def build_report(results):
     for p in predictions:
         label=truth[p['seed']]
         scored.append(dict(**p,truth=label,correct=p['prediction']==label,
+                           equivalent_correct=equivalence_class(p['prediction'])==equivalence_class(label),
                            candidate_hit=label in p['candidates']))
     (results/'blind_scored.json').write_text(json.dumps(scored,indent=2),encoding='utf-8')
     top1=sum(p['correct'] for p in scored); candidate=sum(p['candidate_hit'] for p in scored)
+    equivalent=sum(p['equivalent_correct'] for p in scored)
     manifest=json.loads((results/'manifest.json').read_text())
     verification=json.loads((results/'verification.json').read_text())
     # Single-fault diagnostic experiments only: no false causal attribution in mixed runs.
@@ -158,10 +164,13 @@ def build_report(results):
            f"Random regression: {verification['random_seeds']} independent seeds, each with 1-3 faults, both modes.",
            'Healthy memory: 2560 accepted operations, zero failures, pass=1 in both modes.',
            'Model-only unit tests: 51 checks passed (see fault_model_units.log).',
+           'Verification boundary: reference sequence/state are separate, but both memory instances use sram_fault_model. The scoreboard verifies controller behavior; fault semantics are checked by the 51 model-only tests, not independently proven by the scoreboard.',
            f"Assertion status: {verification['sva']}.",
            f"Functional bins: {len(visits)}/12 element x mode; {len(boundary)}/32 row/array boundary addresses.",'',
            '## Blind holdout','',
            f'Top-choice exact type accuracy: **{top1}/{len(scored)} = {top1/len(scored):.2%}**.',
+           f'SAF0/TF_UP equivalence-class accuracy: **{equivalent}/{len(scored)} = {equivalent/len(scored):.2%}**.',
+           'Only SAF0 and TF_UP are merged into SAF0_OR_TF_UP; every other label remains distinct. All samples remain in the denominator. This is a limited equivalence adjustment, not a claim that all other March signatures are uniquely identifiable.',
            f'Candidate-set inclusion: **{candidate}/{len(scored)} = {candidate/len(scored):.2%}** (not exact-type accuracy).',
            'Balanced, independent single-fault holdout; 5 samples/type by default. Classifier input contains fail CSVs only. Mixed-fault regression is a controller correctness test, not a classification benchmark.',
            'DRF no-failure observations remain in the denominator. No-fail does not prove no fault.',
@@ -183,11 +192,14 @@ def build_report(results):
             '- AF remaps one victim to one aggressor; not all real decoder open/multiple-select faults are modeled.',
             '- For ambiguous cases, run a targeted aggressor-toggle test, independent address-isolation test, changed initialization, or pause-time sweep.',
             '- DRF threshold=10000 cycles is longer than base test duration; a 12000-cycle pause after M0 sensitizes it.',
+            '- Additional observations are evaluated separately: [reviewed development samples](../results/followup/report.md) and [fresh-seed evaluation](../results_followup/report.md). Their improvement is not attributed to March C- alone.',
             ('- Native SVA and covergroups were executed in Questa; merged UCDB and detailed assertion/bin counts are in native_coverage.txt. No gate-level synthesis or timing analysis was performed.' if verification['simulator']=='questa' else '- Portable runs check behavior procedurally. Native SVA and covergroup results are supplied separately in ../results_questa/; these are not code coverage or synthesis results.'),'',
             '## Example bitmaps','',
             '![Row](figures/ROW_diag.png)','','![Column](figures/COL_diag.png)','','![Coupling](figures/CFIN_diag.png)','','![Retention](figures/retention_pause.png)','']
     (results/'report.md').write_text('\n'.join(lines),encoding='utf-8')
     metrics=dict(samples=len(scored),correct=top1,accuracy=top1/len(scored),
+                 equivalent_correct=equivalent,equivalent_accuracy=equivalent/len(scored),
+                 equivalence_classes={'SAF0_OR_TF_UP':['SAF0','TF_UP']},
                  candidate_hits=candidate,candidate_inclusion=candidate/len(scored))
     (results/'blind_metrics.json').write_text(json.dumps(metrics,indent=2),encoding='utf-8')
     print(json.dumps(metrics,indent=2))

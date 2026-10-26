@@ -16,14 +16,14 @@
 
 ## 一键运行
 
-本机 Windows PowerShell，在本项目目录执行：
+Windows PowerShell，在项目根目录执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\run.ps1
 powershell -ExecutionPolicy Bypass -File .\run.ps1 -Simulator questa
 ```
 
-脚本优先使用项目虚拟环境或本机 Codex 的 Python；分析库放在 `.deps`，缺失时从 requirements.txt 安装。需要 Icarus 的 `iverilog/vvp` 或有有效许可的 Questa `vlib/vlog/vsim/vcover`。本机预设路径有自动检测；其他机器请加入 PATH。不需要 UVM。
+需要 Python 3.10+，以及 PATH 中的 Icarus `iverilog/vvp` 或有有效许可的 Questa `vlib/vlog/vsim/vcover`。脚本优先使用项目 `.venv`，其次使用 PATH 中的 Python；也可通过 `-PythonExecutable` 指定解释器。分析库放在 `.deps`，缺失时从 requirements.txt 安装。不依赖特定编辑器或固定安装目录，不需要 UVM。
 
 通用 Linux / 已配置 Python：
 
@@ -37,6 +37,9 @@ python scripts/questa_random.py --seed 17 --count 3
 python scripts/questa_random.py --seed 17 --batch 60 --out results_questa/native_configs/sample --verify-rtl
 python scripts/mutation_check.py
 python scripts/audit.py --results results --compare results_questa
+python scripts/probe.py review --results results
+python scripts/probe.py benchmark --out results_followup
+python -m unittest discover -s tests -v
 ```
 
 `run.py --no-analysis` 只验证硬件，不依赖 pandas/matplotlib。`--seeds`、`--blind-seeds` 均至少 50。固定种子可重现。输出文件会更新，已有额外文件不会自动删除，建议不同实验使用不同 `--out`。
@@ -48,7 +51,7 @@ python scripts/audit.py --results results --compare results_questa
 ```mermaid
 flowchart LR
   CFG[故障配置 / 固定随机种子] --> MEM[同步 SRAM 故障模型]
-  CFG --> REF[同配置、独立存储状态]
+  CFG --> REF[共享故障实现、独立存储状态]
   RTL[可综合 March C- 控制器] -->|en/we/addr/data| MEM
   MEM -->|1 拍读延迟| RTL
   SW[SV 软件 March 操作序列] --> REF
@@ -59,7 +62,9 @@ flowchart LR
   PY --> REPORT[盲测评分 / 覆盖报告]
 ```
 
-参考模型按操作序号独立计算 March 元素、地址、读写和数据，先检查 DUT 发出的每个操作，再驱动独立的同配置存储器副本。副本的读结果按相同周期生成预期失效，scoreboard 比较 `(addr, element, op, expected, actual)`。参考模型不读取 DUT 内部 FSM。独立模型小测试为故障语义提供额外验证，降低共享模型造成的共同错误风险。
+参考序列按操作序号独立计算 March 元素、地址、读写和数据，不读取 DUT 内部 FSM。DUT 访问的存储器与 `reference_memory` 都实例化 **同一个 `sram_fault_model` 实现**，各自持有不同的存储状态；不是两份独立实现的故障模型。scoreboard 先检查每个操作，再比较 `(addr, element, op, expected, actual)`，因此主要验证控制器的操作序列、读比较对齐和失效上报。
+
+故障语义由另行手写预期的 **51 项模型单元检查**支撑。共享实现中的错误可能同时影响 DUT 路径与参考路径，不能把 scoreboard 通过当成故障语义已被独立证明。面试时应主动说明“序列和状态独立、故障实现共用”的边界。
 
 ## RTL 接口与时序
 
@@ -135,6 +140,31 @@ vvp results/build/tb_mbist_0.vvp +CFG=tests/clean.cfg +SEED=17 +STOP=0 +LOG=fail
 盲测55个独立种子，默认11类各5个样本，每次仅注入一个故障。分析器仅读取失效CSV；先保存预测，再由评分器读取独立标签文件。随机多故障回归用于验证控制器，不混入单故障分类准确率。未检出的DRF也计入准确率分母。
 
 规则以空间图案和March失效签名判断，输出一个首选和候选集合。**候选集合包含真实类型不代表唯一分类正确。** SAF0与TF_UP在w0初始化后的签名相同，某些耦合也会重合；AF虽能形成成对图案，也不保证所有真实译码故障都如此。详见报告中的全部误分类和补充实验建议。
+
+另外报告 **仅合并 SAF0/TF_UP 后的等价类准确率**。其余类型保持独立，DRF 未检出仍计错，分母不变；这不是把耦合误判也归为正确的完整等价划分。
+
+| 观测方式 | 严格类型准确率 | 仅合并SAF0/TF_UP |
+|---|---:|---:|
+| 原始March C-，55例 | 38/55，69.09% | 43/55，78.18% |
+| 原55例加辅助测试（开发评估） | 45/55，81.82% | 50/55，90.91% |
+| 新55个种子加辅助测试 | 45/55，81.82% | 50/55，90.91% |
+
+## 耦合故障辅助诊断
+
+新增的 toggle/rewrite 测试从失效 CSV 选择受害地址，遍历其余255个候选攻击地址，同时覆盖两种初始攻击状态和两种受害背景。每个试验读取“写入稳定后、攻击翻转后、受害重写后”的响应。分类器只接收观测 CSV；注入配置仅供仿真存储器装载，不参与推断。
+
+| 类型 | 可观察的因果响应 |
+|---|---|
+| CFIN | 两种攻击跳变都反转受害值，受害重写可以恢复 |
+| CFID | 特定攻击跳变将受害强制为某值，受害重写可以恢复 |
+| CFST | 特定攻击状态持续强制受害值，该状态下受害重写不能恢复相反背景 |
+
+- [已审阅55例的辅助诊断](results/followup/report.md)：作为开发集评估，和原始 March-only 基线分开保留。
+- [新种子评估](results_followup/report.md)：使用200001开始的新种子，固定方法后再评分；严格类型与等价类指标分列。
+
+两组中CFST均由0/5提升为5/5，CFIN均由3/5提升为5/5。剩余严格误分类是TF_UP与SAF0不可分，以及未敏化的DRF；没有将它们隐藏或从分母排除。
+
+每个受害单元增加3060次读和4080次写。每个试验重置行为模型状态是仿真测试条件，不是芯片端可直接使用的操作；实际器件需要另行论证复位或预置方法。辅助结果不代表标准 March C- 的覆盖率提高，也不独立证明故障语义。
 
 ## 文件目录
 

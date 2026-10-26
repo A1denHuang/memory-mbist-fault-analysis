@@ -13,6 +13,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "SAF0",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -27,6 +28,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "SAF1",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -43,6 +45,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "TF_UP",
     "correct": false,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -57,6 +60,7 @@
     "reason": "Read-0 failures only after 1-to-0 writes; transition or coupling candidate.",
     "truth": "TF_DOWN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -73,6 +77,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "CFIN",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -88,6 +93,7 @@
     "reason": "Partial-element single-cell signature suggests coupling; fail CSV alone cannot resolve subtype or aggressor.",
     "truth": "CFID",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -104,6 +110,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "CFST",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -118,6 +125,7 @@
     "reason": "Two addresses fail with complementary ascending/descending signatures; alias candidate.",
     "truth": "AF",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -130,6 +138,7 @@
     "reason": "All 16 columns of a row fail; inspect wordline / row decoder.",
     "truth": "ROW",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -142,6 +151,7 @@
     "reason": "All 16 rows of a column fail; inspect bitline / sense amplifier.",
     "truth": "COL",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -155,6 +165,7 @@
     "reason": "No observed failures: healthy memory or unsensitized/masked fault, including long-threshold DRF.",
     "truth": "DRF",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -171,6 +182,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "SAF0",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -185,6 +197,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "SAF1",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -201,6 +214,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "TF_UP",
     "correct": false,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -215,6 +229,7 @@
     "reason": "Read-0 failures only after 1-to-0 writes; transition or coupling candidate.",
     "truth": "TF_DOWN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -227,6 +242,7 @@
     "reason": "Four-element inversion signature is consistent with aggressor before victim.",
     "truth": "CFIN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -242,6 +258,7 @@
     "reason": "Partial-element single-cell signature suggests coupling; fail CSV alone cannot resolve subtype or aggressor.",
     "truth": "CFID",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -256,6 +273,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "CFST",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -270,6 +288,7 @@
     "reason": "Two addresses fail with complementary ascending/descending signatures; alias candidate.",
     "truth": "AF",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -282,6 +301,7 @@
     "reason": "All 16 columns of a row fail; inspect wordline / row decoder.",
     "truth": "ROW",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -294,6 +314,7 @@
     "reason": "All 16 rows of a column fail; inspect bitline / sense amplifier.",
     "truth": "COL",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -307,6 +328,7 @@
     "reason": "No observed failures: healthy memory or unsensitized/masked fault, including long-threshold DRF.",
     "truth": "DRF",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -323,6 +345,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "SAF0",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -337,6 +360,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "SAF1",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -353,6 +377,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "TF_UP",
     "correct": false,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -367,6 +392,7 @@
     "reason": "Read-0 failures only after 1-to-0 writes; transition or coupling candidate.",
     "truth": "TF_DOWN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -383,6 +409,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "CFIN",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -398,6 +425,7 @@
     "reason": "Partial-element single-cell signature suggests coupling; fail CSV alone cannot resolve subtype or aggressor.",
     "truth": "CFID",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -412,6 +440,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "CFST",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -426,6 +455,7 @@
     "reason": "Two addresses fail with complementary ascending/descending signatures; alias candidate.",
     "truth": "AF",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -438,6 +468,7 @@
     "reason": "All 16 columns of a row fail; inspect wordline / row decoder.",
     "truth": "ROW",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -450,6 +481,7 @@
     "reason": "All 16 rows of a column fail; inspect bitline / sense amplifier.",
     "truth": "COL",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -463,6 +495,7 @@
     "reason": "No observed failures: healthy memory or unsensitized/masked fault, including long-threshold DRF.",
     "truth": "DRF",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -479,6 +512,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "SAF0",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -493,6 +527,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "SAF1",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -509,6 +544,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "TF_UP",
     "correct": false,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -523,6 +559,7 @@
     "reason": "Read-0 failures only after 1-to-0 writes; transition or coupling candidate.",
     "truth": "TF_DOWN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -535,6 +572,7 @@
     "reason": "Four-element inversion signature is consistent with aggressor before victim.",
     "truth": "CFIN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -550,6 +588,7 @@
     "reason": "Partial-element single-cell signature suggests coupling; fail CSV alone cannot resolve subtype or aggressor.",
     "truth": "CFID",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -565,6 +604,7 @@
     "reason": "Partial-element single-cell signature suggests coupling; fail CSV alone cannot resolve subtype or aggressor.",
     "truth": "CFST",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -579,6 +619,7 @@
     "reason": "Two addresses fail with complementary ascending/descending signatures; alias candidate.",
     "truth": "AF",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -591,6 +632,7 @@
     "reason": "All 16 columns of a row fail; inspect wordline / row decoder.",
     "truth": "ROW",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -603,6 +645,7 @@
     "reason": "All 16 rows of a column fail; inspect bitline / sense amplifier.",
     "truth": "COL",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -616,6 +659,7 @@
     "reason": "No observed failures: healthy memory or unsensitized/masked fault, including long-threshold DRF.",
     "truth": "DRF",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -632,6 +676,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "SAF0",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -646,6 +691,7 @@
     "reason": "All read-0 elements fail, including the first read after initialization.",
     "truth": "SAF1",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -662,6 +708,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "TF_UP",
     "correct": false,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -676,6 +723,7 @@
     "reason": "Read-0 failures only after 1-to-0 writes; transition or coupling candidate.",
     "truth": "TF_DOWN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -688,6 +736,7 @@
     "reason": "Four-element inversion signature is consistent with aggressor before victim.",
     "truth": "CFIN",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -703,6 +752,7 @@
     "reason": "Partial-element single-cell signature suggests coupling; fail CSV alone cannot resolve subtype or aggressor.",
     "truth": "CFID",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -719,6 +769,7 @@
     "reason": "Read-1 failures at both backgrounds. SAF0 and TF_UP are observationally identical after w0 initialization; coupling can alias them.",
     "truth": "CFST",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   },
   {
@@ -733,6 +784,7 @@
     "reason": "Two addresses fail with complementary ascending/descending signatures; alias candidate.",
     "truth": "AF",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -745,6 +797,7 @@
     "reason": "All 16 columns of a row fail; inspect wordline / row decoder.",
     "truth": "ROW",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -757,6 +810,7 @@
     "reason": "All 16 rows of a column fail; inspect bitline / sense amplifier.",
     "truth": "COL",
     "correct": true,
+    "equivalent_correct": true,
     "candidate_hit": true
   },
   {
@@ -770,6 +824,7 @@
     "reason": "No observed failures: healthy memory or unsensitized/masked fault, including long-threshold DRF.",
     "truth": "DRF",
     "correct": false,
+    "equivalent_correct": false,
     "candidate_hit": true
   }
 ]
