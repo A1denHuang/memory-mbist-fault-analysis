@@ -1,6 +1,0 @@
-seed,addr,row,col,element,op,expected,actual
-6,0x29,2,9,M2,r1,1,0
-6,0x8b,8,11,M3,r0,0,1
-6,0x4a,4,10,M3,r0,0,1
-6,0x29,2,9,M4,r1,1,0
-6,0x8b,8,11,M5,r0,0,1

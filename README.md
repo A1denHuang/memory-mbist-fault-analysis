@@ -8,11 +8,15 @@
 
 - [中文验收报告](docs/验收报告.md)：已完成内容、实测数字、结果边界。
 - [实测报告](results/report.md)：回归结果、分类准确率、全部误分类样本及原因。
-- [原生 Questa 报告](results_questa/report.md)：SVA、covergroup、合并 UCDB 的验证结果。
+- [原生 Questa 报告](results_questa/report.md)：SVA 和 covergroup 的汇总结果。
 - [RTL](rtl/mbist_controller.sv)、[验证环境](tb/tb_mbist.sv)、[故障模型](tb/sram_fault_model.sv)、[分析入口](scripts/analyze.py)。
 - 无故障：**2560 次操作、0 失效**；**60 个随机种子 × 两种模式**；**55 个盲测样本**。具体结果以随附报告和日志为准。
 
 ![行失效图](results/figures/ROW_diag.png)
+
+仓库只保留源码、汇总报告、图表和少量机器可读指标。逐例配置、CSV、观测数据和日志由脚本生成，受 `.gitignore` 排除，不需要逐个浏览。
+
+完整证据可在 [CI 运行记录](https://github.com/A1denHuang/memory-mbist-fault-analysis/actions/workflows/ci.yml) 中选择一次成功运行，下载 **mbist-verification** 产物，保留14天。过期后可重新运行；Questa 原始日志和 UCDB 通过本地有许可的回归生成。
 
 ## 一键运行
 
@@ -26,6 +30,8 @@ powershell -ExecutionPolicy Bypass -File .\run.ps1 -Simulator questa
 需要 Python 3.10+，以及 PATH 中的 Icarus `iverilog/vvp` 或有有效许可的 Questa `vlib/vlog/vsim/vcover`。脚本优先使用项目 `.venv`，其次使用 PATH 中的 Python；也可通过 `-PythonExecutable` 指定解释器。分析库放在 `.deps`，缺失时从 requirements.txt 安装。不依赖特定编辑器或固定安装目录，不需要 UVM。
 
 通用 Linux / 已配置 Python：
+
+以下分析和审计命令使用前面回归生成的结果，不能仅凭仓库中的汇总文件执行。
 
 ```bash
 python -m pip install -r requirements.txt
@@ -121,19 +127,19 @@ vvp results/build/tb_mbist_0.vvp +CFG=tests/clean.cfg +SEED=17 +STOP=0 +LOG=fail
 
 | 验收项 | 对应证据 |
 |---|---|
-| 故障语义独立检查 | `results/fault_model_units.log`，51项检查 |
+| 故障语义单元检查 | 验收报告中51项检查；完整日志见CI产物 |
 | 验证环境能抓住错误 | `results/mutation_report.json`，5种代表性RTL错误全部检出 |
-| 无故障、所有故障类型、两种模式 | `results/cases/*/simulation.log` |
-| 耦合地址顺序、force/trigger组合 | `coupling_*` 定向测试及 `coupling_order_coverage.json` |
-| 数组边界、行首行尾 | `boundary_*`，`functional_coverage.json` |
-| 60随机种子，每种1..3个故障 | `random_*` 和 `manifest.json` |
-| 读延迟、done稳定、只在比较时失效 | `tb/mbist_sva.sv`、过程检查、Questa UCDB |
+| 无故障、所有故障类型、两种模式 | `results/verification.json`；逐例日志见CI产物 |
+| 耦合地址顺序、force/trigger组合 | `results/coupling_order_coverage.json` |
+| 数组边界、行首行尾 | `results/functional_coverage.json` |
+| 60随机种子，每种1..3个故障 | `results/verification.json`；完整manifest见CI产物 |
+| 读延迟、done稳定、只在比较时失效 | `tb/mbist_sva.sv`、过程检查和原生断言汇总 |
 | 故障×March元素交叉表 | `fault_element_coverage.csv`、报告 |
-| 保持故障的局限及等待检出 | `DRF_diag` 对比 `retention_pause` |
-| 盲测、准确率、错误原因 | `blind_predictions.json`、`blind_scored.json`、`blind_confusion.csv` |
+| 保持故障的局限及等待检出 | 实测报告和保持失效图；逐例数据见CI产物 |
+| 盲测、准确率、错误原因 | `results/report.md`、`blind_metrics.json`、`blind_confusion.csv` |
 | CI | `.github/workflows/ci.yml`，每次推送自动运行；状态见上方 CI 运行记录 |
 
-原生断言包含6条，Icarus 另有可执行过程检查。Questa 保存每个用例的 UCDB，并合并为 `coverage_merged.ucdb`，详情在 `native_coverage.txt`。功能交叉表中的0不等于实现缺陷：M0只写不会报失效，标准 March 对选定长保持时间的DRF不敏感，部分故障-元素组合本来不可达。项目不将这些表包装成100%故障或代码覆盖率。
+原生断言包含6条，Icarus 另有可执行过程检查。仓库保留 `results_questa/native_assertion_summary.json`；Questa 本地回归另生成每例及合并 UCDB 和详细覆盖日志，这些原始输出不纳入版本控制。功能交叉表中的0不等于实现缺陷：M0只写不会报失效，标准 March 对选定长保持时间的DRF不敏感，部分故障-元素组合本来不可达。项目不将这些表包装成100%故障或代码覆盖率。
 
 ## 盲测的边界
 
@@ -174,9 +180,10 @@ tb/        故障模型、软件参考、scoreboard、SVA、covergroup、随机�
 scripts/   回归、分类、图形、盲测评分、Questa约束随机验证
 tests/     可直接使用的无故障配置
 docs/      设计说明与面试问答
-results/   Icarus实测报告、逐例配置与日志、图片、盲测数据
-results_questa/  Questa原生断言与覆盖率结果
+results/   Icarus汇总报告、图表、覆盖及分类指标
+results_questa/  Questa汇总报告、图表及原生断言摘要
+results_followup/  新种子辅助诊断汇总报告与指标
 .github/   可移植CI工作流
 ```
 
-公开仓库保留源码、图表和文本验证证据；`.deps`、编译缓存、波形、UCDB 和本机许可证文件不纳入版本控制。原生 Questa UCDB 可通过本机回归重新生成。项目未附加开源许可证。
+公开仓库保留源码、图表和汇总证据；逐例输出、`.deps`、编译缓存、波形、UCDB 和本机许可证文件不纳入版本控制。发布检查会阻止逐例输出意外入库。本地完整结果保留，原始证据也可通过CI或本地回归重新生成。项目未附加开源许可证。

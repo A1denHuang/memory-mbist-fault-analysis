@@ -1,2 +1,0 @@
-PASS seed=67 stop=1 operations=283 failures=1
-tb\tb_mbist.sv:118: $finish called at 3040000 (1ps)

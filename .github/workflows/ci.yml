@@ -25,11 +25,16 @@ jobs:
           python scripts/probe.py review --results results
           python scripts/probe.py benchmark --out results_followup
           python scripts/publication_check.py
-      - name: Publish logs and reports
+      - name: Publish full verification evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: mbist-verification
+          retention-days: 14
+          compression-level: 9
           path: |
             results/
             results_followup/
+            !results/**/build/**
+            !results_followup/**/build/**
+            !**/config_build/**

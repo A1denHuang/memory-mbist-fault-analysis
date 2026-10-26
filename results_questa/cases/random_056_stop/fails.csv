@@ -1,2 +1,0 @@
-seed,addr,row,col,element,op,expected,actual
-56,0x82,8,2,M2,r1,1,0

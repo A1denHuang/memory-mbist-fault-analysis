@@ -1,2 +1,0 @@
-PASS fault-model unit checks=51
-tb\tb_fault_model.sv:47: $finish called at 1000 (1ps)
