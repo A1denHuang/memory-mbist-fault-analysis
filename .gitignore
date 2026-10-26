@@ -1,0 +1,26 @@
+__pycache__/
+.venv/
+.deps/
+results/build/
+results_questa/build/
+results_questa/config_build/
+work/
+transcript
+*.ucdb
+*.vvp
+*.wlf
+coverage.ucdb
+
+# Generated artifacts and local simulator state
+**/build/
+**/config_build/
+*.vcd
+*.ucdb*
+*.wlf*
+*.vstf
+vsim_stacktrace.vstf
+modelsim.ini
+*.lic
+license.dat
+.env
+.env.*

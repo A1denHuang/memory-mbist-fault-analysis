@@ -1,0 +1,27 @@
+name: MBIST regression
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install simulator and analysis libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y iverilog
+          python -m pip install -r requirements.txt
+      - name: Run model tests, scoreboard regression and blind analysis
+        run: |
+          python scripts/run.py --seeds 60 --blind-seeds 55
+          python scripts/mutation_check.py
+          python scripts/audit.py
+      - name: Publish logs and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mbist-verification
+          path: results/

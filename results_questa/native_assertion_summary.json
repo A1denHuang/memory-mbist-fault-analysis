@@ -1,0 +1,8 @@
+{
+  "assertions": 6,
+  "failures": 0,
+  "all_exercised": true,
+  "total_covergroup_metric_percent": 91.15,
+  "operation_covergroup_percent": 100,
+  "note": "Simulator covergroup metric includes unreachable/unsensitized cross bins; not silicon fault coverage or code coverage."
+}

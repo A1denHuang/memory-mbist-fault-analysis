@@ -1,0 +1,27 @@
+[
+  {
+    "mutation": "address_skip",
+    "status": "detected",
+    "diagnostic": "FATAL: D:\\ICVProject\\Project\\PE_Project\\tb\\tb_mbist.sv:79: Sequence mismatch at operation 1"
+  },
+  {
+    "mutation": "wrong_read_expectation",
+    "status": "detected",
+    "diagnostic": "FATAL: D:\\ICVProject\\Project\\PE_Project\\tb\\tb_mbist.sv:92: Failure-valid mismatch at cycle 262"
+  },
+  {
+    "mutation": "missing_fail_valid",
+    "status": "detected",
+    "diagnostic": "FATAL: D:\\ICVProject\\Project\\PE_Project\\tb\\tb_mbist.sv:92: Failure-valid mismatch at cycle 436"
+  },
+  {
+    "mutation": "bad_operation_count",
+    "status": "detected",
+    "diagnostic": "FATAL: D:\\ICVProject\\Project\\PE_Project\\tb\\tb_mbist.sv:107: Operation count mismatch"
+  },
+  {
+    "mutation": "ignore_stop",
+    "status": "detected",
+    "diagnostic": "FATAL: D:\\ICVProject\\Project\\PE_Project\\tb\\tb_mbist.sv:109: Stop mode reported multiple failures"
+  }
+]

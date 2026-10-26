@@ -1,0 +1,2 @@
+PASS seed=15 stop=1 operations=779 failures=1
+D:\ICVProject\Project\PE_Project\tb\tb_mbist.sv:118: $finish called at 10480000 (1ps)

@@ -1,0 +1,44 @@
+Reading D:/Questasim/tcl/vsim/pref.tcl
+
+# 10.7c
+
+# vsim -c -coverage -onfinish stop -lib work tb_mbist "+CFG=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_036_stop/faults.cfg" "+LOG=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_036_stop/fails.csv" "+SUMMARY=C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_036_stop/summary.txt" "+SEED=36" "+STOP=1" -do "onerror {quit -code 1}; run -all; coverage report -assert; coverage report -cvg; coverage save {C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_036_stop/coverage.ucdb}; quit -code 0" -gRETENTION_CYCLES=0 
+# Start time: 02:39:09 on Oct 26,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb_mbist(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# onerror {quit -code 1}
+#  Warning: onerror command for use within macro
+#  run -all
+# PASS seed=36 stop=1 operations=315 failures=1
+# ** Note: $finish    : C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_mbist.sv(118)
+#    Time: 3520 ns  Iteration: 1  Instance: /tb_mbist
+# Break at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_mbist.sv line 118
+# Stopped at C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/tb/tb_mbist.sv line 118
+#  coverage report -assert
+# 
+# TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 6
+# 
+#  coverage report -cvg
+# 
+# TOTAL COVERGROUP COVERAGE: 25.00%  COVERGROUP TYPES: 2
+# 
+#  coverage save {C:/Users/15354/Documents/ChatGPT/Engineer, HIG HBM Product & System Engineering/mbist_project/results_questa/cases/random_036_stop/coverage.ucdb}
+#  quit -code 0
+# End time: 02:39:10 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

@@ -1,0 +1,99 @@
+{
+  "CFID aggressor < victim; force=0, trigger=0": [
+    "M2"
+  ],
+  "CFID aggressor < victim; force=0, trigger=1": [
+    "M4"
+  ],
+  "CFID aggressor < victim; force=1, trigger=0": [
+    "M5"
+  ],
+  "CFID aggressor < victim; force=1, trigger=1": [
+    "M1"
+  ],
+  "CFID aggressor > victim; force=0, trigger=0": [
+    "M4"
+  ],
+  "CFID aggressor > victim; force=0, trigger=1": [
+    "M2"
+  ],
+  "CFID aggressor > victim; force=1, trigger=0": [
+    "M3"
+  ],
+  "CFID aggressor > victim; force=1, trigger=1": [
+    "M3"
+  ],
+  "CFIN aggressor < victim; force=0, trigger=0": [
+    "M1",
+    "M2",
+    "M4",
+    "M5"
+  ],
+  "CFIN aggressor < victim; force=0, trigger=1": [
+    "M1",
+    "M2",
+    "M4",
+    "M5"
+  ],
+  "CFIN aggressor < victim; force=1, trigger=0": [
+    "M1",
+    "M2",
+    "M4",
+    "M5"
+  ],
+  "CFIN aggressor < victim; force=1, trigger=1": [
+    "M1",
+    "M2",
+    "M4",
+    "M5"
+  ],
+  "CFIN aggressor > victim; force=0, trigger=0": [
+    "M2",
+    "M4"
+  ],
+  "CFIN aggressor > victim; force=0, trigger=1": [
+    "M2",
+    "M4"
+  ],
+  "CFIN aggressor > victim; force=1, trigger=0": [
+    "M2",
+    "M4"
+  ],
+  "CFIN aggressor > victim; force=1, trigger=1": [
+    "M2",
+    "M4"
+  ],
+  "CFST aggressor < victim; force=0, trigger=0": [
+    "M2",
+    "M4"
+  ],
+  "CFST aggressor < victim; force=0, trigger=1": [
+    "M2",
+    "M4"
+  ],
+  "CFST aggressor < victim; force=1, trigger=0": [
+    "M1",
+    "M3",
+    "M5"
+  ],
+  "CFST aggressor < victim; force=1, trigger=1": [
+    "M1",
+    "M5"
+  ],
+  "CFST aggressor > victim; force=0, trigger=0": [
+    "M2",
+    "M4"
+  ],
+  "CFST aggressor > victim; force=0, trigger=1": [
+    "M2",
+    "M4"
+  ],
+  "CFST aggressor > victim; force=1, trigger=0": [
+    "M1",
+    "M3",
+    "M5"
+  ],
+  "CFST aggressor > victim; force=1, trigger=1": [
+    "M3"
+  ]
+}

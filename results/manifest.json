@@ -1,0 +1,6871 @@
+[
+  {
+    "name": "clean_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "clean_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "SAF0_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "SAF0_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 885,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1207
+  },
+  {
+    "name": "SAF1_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "SAF1_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 373,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 439
+  },
+  {
+    "name": "TF_UP_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "TF_UP_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 885,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1207
+  },
+  {
+    "name": "TF_DOWN_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "TF_DOWN_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 1675,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 2392
+  },
+  {
+    "name": "CFIN_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "CFIN_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 373,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 439
+  },
+  {
+    "name": "CFID_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "CFID_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2187,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3160
+  },
+  {
+    "name": "CFST_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "CFST_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 885,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1207
+  },
+  {
+    "name": "AF_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "AF_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 373,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 439
+  },
+  {
+    "name": "ROW_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "ROW_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 865,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1177
+  },
+  {
+    "name": "COL_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "COL_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 789,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1063
+  },
+  {
+    "name": "DRF_diag",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "DRF_stop",
+    "group": "directed",
+    "seed": 0,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_0_255_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_0_255_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_0_255_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_0_255_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_255_0_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_255_0_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_255_0_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_255_0_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_15_16_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_15_16_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_15_16_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_15_16_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_16_15_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_16_15_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_16_15_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_5_16_15_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_0_255_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_0_255_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_0_255_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_0_255_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_255_0_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_255_0_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_255_0_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_255_0_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_15_16_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_15_16_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_15_16_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_15_16_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_16_15_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_16_15_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_16_15_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_6_16_15_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_0_255_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_0_255_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_0_255_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_0_255_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 0,
+        "aggressor": 255,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_255_0_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_255_0_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_255_0_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_255_0_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 255,
+        "aggressor": 0,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_15_16_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_15_16_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_15_16_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_15_16_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 15,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_16_15_0_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_16_15_0_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_16_15_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "coupling_7_16_15_1_1",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_1_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_2_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_3_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_4_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_8_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_9_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_10_0",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 0,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_1_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_2_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_3_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_4_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_8_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_9_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_10_15",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 15,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_1_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_2_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_3_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_4_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_8_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_9_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_10_16",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 16,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_1_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_2_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_3_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_4_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_8_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_9_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_10_240",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 240,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_1_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_2_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_3_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_4_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_8_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_9_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "boundary_10_255",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 255,
+        "aggressor": 127,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "retention_pause",
+    "group": "directed",
+    "seed": 0,
+    "mode": 0,
+    "pause": true,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 58,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 15847
+  },
+  {
+    "name": "random_001_diag",
+    "group": "random",
+    "seed": 1,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 32,
+        "aggressor": 130,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_001_stop",
+    "group": "random",
+    "seed": 1,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 32,
+        "aggressor": 130,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 321,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 361
+  },
+  {
+    "name": "random_002_diag",
+    "group": "random",
+    "seed": 2,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 46,
+        "aggressor": 43,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_002_stop",
+    "group": "random",
+    "seed": 2,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 46,
+        "aggressor": 43,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2211,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3196
+  },
+  {
+    "name": "random_003_diag",
+    "group": "random",
+    "seed": 3,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 66,
+        "aggressor": 189,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_003_stop",
+    "group": "random",
+    "seed": 3,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 66,
+        "aggressor": 189,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 261,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 271
+  },
+  {
+    "name": "random_004_diag",
+    "group": "random",
+    "seed": 4,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 155,
+        "aggressor": 52,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_004_stop",
+    "group": "random",
+    "seed": 4,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 155,
+        "aggressor": 52,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 567,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 730
+  },
+  {
+    "name": "random_005_diag",
+    "group": "random",
+    "seed": 5,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 130,
+        "aggressor": 183,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 127,
+        "aggressor": 26,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 240,
+        "aggressor": 126,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_005_stop",
+    "group": "random",
+    "seed": 5,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 130,
+        "aggressor": 183,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 127,
+        "aggressor": 26,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 240,
+        "aggressor": 126,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1023,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1414
+  },
+  {
+    "name": "random_006_diag",
+    "group": "random",
+    "seed": 6,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 41,
+        "aggressor": 248,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 74,
+        "aggressor": 240,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 4,
+        "victim": 139,
+        "aggressor": 250,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 5,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_006_stop",
+    "group": "random",
+    "seed": 6,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 41,
+        "aggressor": 248,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 74,
+        "aggressor": 240,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 4,
+        "victim": 139,
+        "aggressor": 250,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 851,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1156
+  },
+  {
+    "name": "random_007_diag",
+    "group": "random",
+    "seed": 7,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 77,
+        "aggressor": 202,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 48,
+        "aggressor": 187,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_007_stop",
+    "group": "random",
+    "seed": 7,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 77,
+        "aggressor": 202,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 48,
+        "aggressor": 187,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 769,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1033
+  },
+  {
+    "name": "random_008_diag",
+    "group": "random",
+    "seed": 8,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 189,
+        "aggressor": 192,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_008_stop",
+    "group": "random",
+    "seed": 8,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 189,
+        "aggressor": 192,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1147,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1600
+  },
+  {
+    "name": "random_009_diag",
+    "group": "random",
+    "seed": 9,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 191,
+        "aggressor": 136,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 173,
+        "aggressor": 237,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 34,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_009_stop",
+    "group": "random",
+    "seed": 9,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 191,
+        "aggressor": 136,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 173,
+        "aggressor": 237,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 795,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1072
+  },
+  {
+    "name": "random_010_diag",
+    "group": "random",
+    "seed": 10,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 16,
+        "aggressor": 219,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 236,
+        "aggressor": 251,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 250,
+        "aggressor": 167,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 9,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_010_stop",
+    "group": "random",
+    "seed": 10,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 16,
+        "aggressor": 219,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 236,
+        "aggressor": 251,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 250,
+        "aggressor": 167,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 695,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 922
+  },
+  {
+    "name": "random_011_diag",
+    "group": "random",
+    "seed": 11,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 238,
+        "aggressor": 231,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 243,
+        "aggressor": 95,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 35,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_011_stop",
+    "group": "random",
+    "seed": 11,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 238,
+        "aggressor": 231,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 243,
+        "aggressor": 95,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 743,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 994
+  },
+  {
+    "name": "random_012_diag",
+    "group": "random",
+    "seed": 12,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 137,
+        "aggressor": 179,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 191,
+        "aggressor": 247,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_012_stop",
+    "group": "random",
+    "seed": 12,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 137,
+        "aggressor": 179,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 191,
+        "aggressor": 247,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1043,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1444
+  },
+  {
+    "name": "random_013_diag",
+    "group": "random",
+    "seed": 13,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 148,
+        "aggressor": 95,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 115,
+        "aggressor": 95,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_013_stop",
+    "group": "random",
+    "seed": 13,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 148,
+        "aggressor": 95,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 115,
+        "aggressor": 95,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 999,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1378
+  },
+  {
+    "name": "random_014_diag",
+    "group": "random",
+    "seed": 14,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 126,
+        "aggressor": 138,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_014_stop",
+    "group": "random",
+    "seed": 14,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 126,
+        "aggressor": 138,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1021,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1411
+  },
+  {
+    "name": "random_015_diag",
+    "group": "random",
+    "seed": 15,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 5,
+        "aggressor": 18,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_015_stop",
+    "group": "random",
+    "seed": 15,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 5,
+        "aggressor": 18,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 779,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1048
+  },
+  {
+    "name": "random_016_diag",
+    "group": "random",
+    "seed": 16,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 240,
+        "aggressor": 246,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 228,
+        "aggressor": 2,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 5,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_016_stop",
+    "group": "random",
+    "seed": 16,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 240,
+        "aggressor": 246,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 228,
+        "aggressor": 2,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 713,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 949
+  },
+  {
+    "name": "random_017_diag",
+    "group": "random",
+    "seed": 17,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 212,
+        "aggressor": 155,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 142,
+        "aggressor": 56,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 214,
+        "aggressor": 129,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 50,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_017_stop",
+    "group": "random",
+    "seed": 17,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 212,
+        "aggressor": 155,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 142,
+        "aggressor": 56,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 214,
+        "aggressor": 129,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 673,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 889
+  },
+  {
+    "name": "random_018_diag",
+    "group": "random",
+    "seed": 18,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 62,
+        "aggressor": 229,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_018_stop",
+    "group": "random",
+    "seed": 18,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 62,
+        "aggressor": 229,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2179,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3148
+  },
+  {
+    "name": "random_019_diag",
+    "group": "random",
+    "seed": 19,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 22,
+        "aggressor": 61,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 177,
+        "aggressor": 148,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 55,
+        "aggressor": 133,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 63,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_019_stop",
+    "group": "random",
+    "seed": 19,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 22,
+        "aggressor": 61,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 177,
+        "aggressor": 148,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 55,
+        "aggressor": 133,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 771,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1036
+  },
+  {
+    "name": "random_020_diag",
+    "group": "random",
+    "seed": 20,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 77,
+        "aggressor": 133,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 86,
+        "aggressor": 13,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 52,
+        "aggressor": 64,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_020_stop",
+    "group": "random",
+    "seed": 20,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 77,
+        "aggressor": 133,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 86,
+        "aggressor": 13,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 52,
+        "aggressor": 64,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 429,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 523
+  },
+  {
+    "name": "random_021_diag",
+    "group": "random",
+    "seed": 21,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 214,
+        "aggressor": 144,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_021_stop",
+    "group": "random",
+    "seed": 21,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 214,
+        "aggressor": 144,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 685,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 907
+  },
+  {
+    "name": "random_022_diag",
+    "group": "random",
+    "seed": 22,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 124,
+        "aggressor": 12,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_022_stop",
+    "group": "random",
+    "seed": 22,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 124,
+        "aggressor": 12,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 281,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 301
+  },
+  {
+    "name": "random_023_diag",
+    "group": "random",
+    "seed": 23,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 42,
+        "aggressor": 8,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 194,
+        "aggressor": 183,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 50,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_023_stop",
+    "group": "random",
+    "seed": 23,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 42,
+        "aggressor": 8,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 194,
+        "aggressor": 183,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 277,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 295
+  },
+  {
+    "name": "random_024_diag",
+    "group": "random",
+    "seed": 24,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 196,
+        "aggressor": 93,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 86,
+        "aggressor": 46,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 225,
+        "aggressor": 239,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_024_stop",
+    "group": "random",
+    "seed": 24,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 196,
+        "aggressor": 93,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 86,
+        "aggressor": 46,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 225,
+        "aggressor": 239,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 941,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1291
+  },
+  {
+    "name": "random_025_diag",
+    "group": "random",
+    "seed": 25,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 7,
+        "aggressor": 109,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 130,
+        "aggressor": 17,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 6,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_025_stop",
+    "group": "random",
+    "seed": 25,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 7,
+        "aggressor": 109,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 130,
+        "aggressor": 17,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 517,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 655
+  },
+  {
+    "name": "random_026_diag",
+    "group": "random",
+    "seed": 26,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 103,
+        "aggressor": 105,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 244,
+        "aggressor": 21,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 4,
+        "victim": 124,
+        "aggressor": 209,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_026_stop",
+    "group": "random",
+    "seed": 26,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 103,
+        "aggressor": 105,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 244,
+        "aggressor": 21,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 4,
+        "victim": 124,
+        "aggressor": 209,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 975,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1342
+  },
+  {
+    "name": "random_027_diag",
+    "group": "random",
+    "seed": 27,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 245,
+        "aggressor": 141,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 33,
+        "aggressor": 130,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 190,
+        "aggressor": 206,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 54,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_027_stop",
+    "group": "random",
+    "seed": 27,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 245,
+        "aggressor": 141,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 33,
+        "aggressor": 130,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 190,
+        "aggressor": 206,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 321,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 361
+  },
+  {
+    "name": "random_028_diag",
+    "group": "random",
+    "seed": 28,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 66,
+        "aggressor": 91,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_028_stop",
+    "group": "random",
+    "seed": 28,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 66,
+        "aggressor": 91,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 1659,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 2368
+  },
+  {
+    "name": "random_029_diag",
+    "group": "random",
+    "seed": 29,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 38,
+        "aggressor": 177,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 176,
+        "aggressor": 201,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 53,
+        "aggressor": 227,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 50,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_029_stop",
+    "group": "random",
+    "seed": 29,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 38,
+        "aggressor": 177,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 176,
+        "aggressor": 201,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 53,
+        "aggressor": 227,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 269,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 283
+  },
+  {
+    "name": "random_030_diag",
+    "group": "random",
+    "seed": 30,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 148,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 24,
+        "aggressor": 203,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 236,
+        "aggressor": 3,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 64,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_030_stop",
+    "group": "random",
+    "seed": 30,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 148,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 24,
+        "aggressor": 203,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 236,
+        "aggressor": 3,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 777,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1045
+  },
+  {
+    "name": "random_031_diag",
+    "group": "random",
+    "seed": 31,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 240,
+        "aggressor": 57,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_031_stop",
+    "group": "random",
+    "seed": 31,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 240,
+        "aggressor": 57,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1249,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1753
+  },
+  {
+    "name": "random_032_diag",
+    "group": "random",
+    "seed": 32,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 109,
+        "aggressor": 74,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_032_stop",
+    "group": "random",
+    "seed": 32,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 109,
+        "aggressor": 74,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 475,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 592
+  },
+  {
+    "name": "random_033_diag",
+    "group": "random",
+    "seed": 33,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 85,
+        "aggressor": 119,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 8,
+        "victim": 164,
+        "aggressor": 246,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 154,
+        "aggressor": 211,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 8,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_033_stop",
+    "group": "random",
+    "seed": 33,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 85,
+        "aggressor": 119,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 8,
+        "victim": 164,
+        "aggressor": 246,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 154,
+        "aggressor": 211,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 749,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1003
+  },
+  {
+    "name": "random_034_diag",
+    "group": "random",
+    "seed": 34,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 182,
+        "aggressor": 14,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 186,
+        "aggressor": 33,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 48,
+        "aggressor": 79,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 7,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_034_stop",
+    "group": "random",
+    "seed": 34,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 182,
+        "aggressor": 14,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 186,
+        "aggressor": 33,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 48,
+        "aggressor": 79,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 353,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 409
+  },
+  {
+    "name": "random_035_diag",
+    "group": "random",
+    "seed": 35,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 171,
+        "aggressor": 67,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 221,
+        "aggressor": 129,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 187,
+        "aggressor": 49,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 34,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_035_stop",
+    "group": "random",
+    "seed": 35,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 171,
+        "aggressor": 67,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 221,
+        "aggressor": 129,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 187,
+        "aggressor": 49,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 795,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1072
+  },
+  {
+    "name": "random_036_diag",
+    "group": "random",
+    "seed": 36,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 29,
+        "aggressor": 10,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 90,
+        "aggressor": 126,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 6,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_036_stop",
+    "group": "random",
+    "seed": 36,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 29,
+        "aggressor": 10,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 5,
+        "victim": 90,
+        "aggressor": 126,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 315,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 352
+  },
+  {
+    "name": "random_037_diag",
+    "group": "random",
+    "seed": 37,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 46,
+        "aggressor": 18,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 55,
+        "aggressor": 233,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 216,
+        "aggressor": 227,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 50,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_037_stop",
+    "group": "random",
+    "seed": 37,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 46,
+        "aggressor": 18,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 55,
+        "aggressor": 233,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 216,
+        "aggressor": 227,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 271,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 286
+  },
+  {
+    "name": "random_038_diag",
+    "group": "random",
+    "seed": 38,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 215,
+        "aggressor": 219,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 237,
+        "aggressor": 191,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 167,
+        "aggressor": 136,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 6,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_038_stop",
+    "group": "random",
+    "seed": 38,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 215,
+        "aggressor": 219,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 237,
+        "aggressor": 191,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 167,
+        "aggressor": 136,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 591,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 766
+  },
+  {
+    "name": "random_039_diag",
+    "group": "random",
+    "seed": 39,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 132,
+        "aggressor": 197,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_039_stop",
+    "group": "random",
+    "seed": 39,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 132,
+        "aggressor": 197,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1033,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1429
+  },
+  {
+    "name": "random_040_diag",
+    "group": "random",
+    "seed": 40,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 16,
+        "aggressor": 125,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 8,
+        "victim": 178,
+        "aggressor": 141,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 6,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_040_stop",
+    "group": "random",
+    "seed": 40,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 16,
+        "aggressor": 125,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 8,
+        "victim": 178,
+        "aggressor": 141,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 613,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 799
+  },
+  {
+    "name": "random_041_diag",
+    "group": "random",
+    "seed": 41,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 170,
+        "aggressor": 118,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 141,
+        "aggressor": 196,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 34,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_041_stop",
+    "group": "random",
+    "seed": 41,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 170,
+        "aggressor": 118,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 141,
+        "aggressor": 196,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 795,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1072
+  },
+  {
+    "name": "random_042_diag",
+    "group": "random",
+    "seed": 42,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 57,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 71,
+        "aggressor": 52,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 7,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_042_stop",
+    "group": "random",
+    "seed": 42,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 57,
+        "aggressor": 12,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 11,
+        "victim": 71,
+        "aggressor": 52,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 16,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 289,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 313
+  },
+  {
+    "name": "random_043_diag",
+    "group": "random",
+    "seed": 43,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 146,
+        "aggressor": 73,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_043_stop",
+    "group": "random",
+    "seed": 43,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 146,
+        "aggressor": 73,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 549,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 703
+  },
+  {
+    "name": "random_044_diag",
+    "group": "random",
+    "seed": 44,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 59,
+        "aggressor": 90,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 14,
+        "aggressor": 115,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 5,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_044_stop",
+    "group": "random",
+    "seed": 44,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 59,
+        "aggressor": 90,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 14,
+        "aggressor": 115,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 285,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 307
+  },
+  {
+    "name": "random_045_diag",
+    "group": "random",
+    "seed": 45,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 213,
+        "aggressor": 249,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 173,
+        "aggressor": 11,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 5,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_045_stop",
+    "group": "random",
+    "seed": 45,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 213,
+        "aggressor": 249,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 2,
+        "victim": 173,
+        "aggressor": 11,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 603,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 784
+  },
+  {
+    "name": "random_046_diag",
+    "group": "random",
+    "seed": 46,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 204,
+        "aggressor": 20,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_046_stop",
+    "group": "random",
+    "seed": 46,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 204,
+        "aggressor": 20,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 793,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1069
+  },
+  {
+    "name": "random_047_diag",
+    "group": "random",
+    "seed": 47,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 32,
+        "aggressor": 220,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 131,
+        "aggressor": 197,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 50,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_047_stop",
+    "group": "random",
+    "seed": 47,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 32,
+        "aggressor": 220,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 131,
+        "aggressor": 197,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 321,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 361
+  },
+  {
+    "name": "random_048_diag",
+    "group": "random",
+    "seed": 48,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 161,
+        "aggressor": 67,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 223,
+        "aggressor": 84,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 112,
+        "aggressor": 111,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 82,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_048_stop",
+    "group": "random",
+    "seed": 48,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 161,
+        "aggressor": 67,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 3,
+        "victim": 223,
+        "aggressor": 84,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 112,
+        "aggressor": 111,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 577,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 745
+  },
+  {
+    "name": "random_049_diag",
+    "group": "random",
+    "seed": 49,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 176,
+        "aggressor": 211,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_049_stop",
+    "group": "random",
+    "seed": 49,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 176,
+        "aggressor": 211,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 609,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 793
+  },
+  {
+    "name": "random_050_diag",
+    "group": "random",
+    "seed": 50,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 136,
+        "aggressor": 186,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 168,
+        "aggressor": 43,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_050_stop",
+    "group": "random",
+    "seed": 50,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 136,
+        "aggressor": 186,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 9,
+        "victim": 168,
+        "aggressor": 43,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 577,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 745
+  },
+  {
+    "name": "random_051_diag",
+    "group": "random",
+    "seed": 51,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 82,
+        "aggressor": 125,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_051_stop",
+    "group": "random",
+    "seed": 51,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 82,
+        "aggressor": 125,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 1627,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 2320
+  },
+  {
+    "name": "random_052_diag",
+    "group": "random",
+    "seed": 52,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 27,
+        "aggressor": 247,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 71,
+        "aggressor": 81,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_052_stop",
+    "group": "random",
+    "seed": 52,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 27,
+        "aggressor": 247,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 71,
+        "aggressor": 81,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 911,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1246
+  },
+  {
+    "name": "random_053_diag",
+    "group": "random",
+    "seed": 53,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 110,
+        "aggressor": 233,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 232,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 67,
+        "aggressor": 133,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 52,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_053_stop",
+    "group": "random",
+    "seed": 53,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 110,
+        "aggressor": 233,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 232,
+        "aggressor": 15,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 67,
+        "aggressor": 133,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 449,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 553
+  },
+  {
+    "name": "random_054_diag",
+    "group": "random",
+    "seed": 54,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 224,
+        "aggressor": 152,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_054_stop",
+    "group": "random",
+    "seed": 54,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 224,
+        "aggressor": 152,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 705,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 937
+  },
+  {
+    "name": "random_055_diag",
+    "group": "random",
+    "seed": 55,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 100,
+        "aggressor": 76,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_055_stop",
+    "group": "random",
+    "seed": 55,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 100,
+        "aggressor": 76,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 457,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 565
+  },
+  {
+    "name": "random_056_diag",
+    "group": "random",
+    "seed": 56,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 5,
+        "aggressor": 242,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 118,
+        "aggressor": 48,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 130,
+        "aggressor": 106,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_056_stop",
+    "group": "random",
+    "seed": 56,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 5,
+        "aggressor": 242,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 6,
+        "victim": 118,
+        "aggressor": 48,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 130,
+        "aggressor": 106,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 1029,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1423
+  },
+  {
+    "name": "random_057_diag",
+    "group": "random",
+    "seed": 57,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 188,
+        "aggressor": 9,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_057_stop",
+    "group": "random",
+    "seed": 57,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 188,
+        "aggressor": 9,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 1415,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 2002
+  },
+  {
+    "name": "random_058_diag",
+    "group": "random",
+    "seed": 58,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 100,
+        "aggressor": 105,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 98,
+        "aggressor": 230,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 133,
+        "aggressor": 230,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 49,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_058_stop",
+    "group": "random",
+    "seed": 58,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 100,
+        "aggressor": 105,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      },
+      {
+        "kind": 7,
+        "victim": 98,
+        "aggressor": 230,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 10,
+        "victim": 133,
+        "aggressor": 230,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 267,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 280
+  },
+  {
+    "name": "random_059_diag",
+    "group": "random",
+    "seed": 59,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 43,
+        "aggressor": 235,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_059_stop",
+    "group": "random",
+    "seed": 59,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 43,
+        "aggressor": 235,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 855,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 1162
+  },
+  {
+    "name": "random_060_diag",
+    "group": "random",
+    "seed": 60,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 145,
+        "aggressor": 78,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 239,
+        "aggressor": 170,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 6,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "random_060_stop",
+    "group": "random",
+    "seed": 60,
+    "mode": 1,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 145,
+        "aggressor": 78,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      },
+      {
+        "kind": 1,
+        "victim": 239,
+        "aggressor": 170,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 547,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 700
+  },
+  {
+    "name": "blind_100001",
+    "group": "blind",
+    "seed": 100001,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 136,
+        "aggressor": 81,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100002",
+    "group": "blind",
+    "seed": 100002,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 220,
+        "aggressor": 158,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100003",
+    "group": "blind",
+    "seed": 100003,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 189,
+        "aggressor": 90,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100004",
+    "group": "blind",
+    "seed": 100004,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 17,
+        "aggressor": 171,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100005",
+    "group": "blind",
+    "seed": 100005,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 182,
+        "aggressor": 211,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100006",
+    "group": "blind",
+    "seed": 100006,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 27,
+        "aggressor": 247,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100007",
+    "group": "blind",
+    "seed": 100007,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 50,
+        "aggressor": 153,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100008",
+    "group": "blind",
+    "seed": 100008,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 81,
+        "aggressor": 121,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100009",
+    "group": "blind",
+    "seed": 100009,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 85,
+        "aggressor": 25,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100010",
+    "group": "blind",
+    "seed": 100010,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 234,
+        "aggressor": 63,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100011",
+    "group": "blind",
+    "seed": 100011,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 143,
+        "aggressor": 59,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100012",
+    "group": "blind",
+    "seed": 100012,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 22,
+        "aggressor": 111,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100013",
+    "group": "blind",
+    "seed": 100013,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 74,
+        "aggressor": 234,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100014",
+    "group": "blind",
+    "seed": 100014,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 72,
+        "aggressor": 191,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100015",
+    "group": "blind",
+    "seed": 100015,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 204,
+        "aggressor": 40,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100016",
+    "group": "blind",
+    "seed": 100016,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 142,
+        "aggressor": 118,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100017",
+    "group": "blind",
+    "seed": 100017,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 69,
+        "aggressor": 125,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100018",
+    "group": "blind",
+    "seed": 100018,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 78,
+        "aggressor": 180,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100019",
+    "group": "blind",
+    "seed": 100019,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 22,
+        "aggressor": 228,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100020",
+    "group": "blind",
+    "seed": 100020,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 17,
+        "aggressor": 183,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100021",
+    "group": "blind",
+    "seed": 100021,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 33,
+        "aggressor": 195,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100022",
+    "group": "blind",
+    "seed": 100022,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 201,
+        "aggressor": 197,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100023",
+    "group": "blind",
+    "seed": 100023,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 35,
+        "aggressor": 119,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100024",
+    "group": "blind",
+    "seed": 100024,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 45,
+        "aggressor": 250,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100025",
+    "group": "blind",
+    "seed": 100025,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 180,
+        "aggressor": 149,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100026",
+    "group": "blind",
+    "seed": 100026,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 180,
+        "aggressor": 163,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100027",
+    "group": "blind",
+    "seed": 100027,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 9,
+        "aggressor": 88,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100028",
+    "group": "blind",
+    "seed": 100028,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 243,
+        "aggressor": 216,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100029",
+    "group": "blind",
+    "seed": 100029,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 66,
+        "aggressor": 226,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100030",
+    "group": "blind",
+    "seed": 100030,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 72,
+        "aggressor": 140,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100031",
+    "group": "blind",
+    "seed": 100031,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 173,
+        "aggressor": 62,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100032",
+    "group": "blind",
+    "seed": 100032,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 125,
+        "aggressor": 189,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100033",
+    "group": "blind",
+    "seed": 100033,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 16,
+        "aggressor": 139,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100034",
+    "group": "blind",
+    "seed": 100034,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 199,
+        "aggressor": 188,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100035",
+    "group": "blind",
+    "seed": 100035,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 214,
+        "aggressor": 235,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100036",
+    "group": "blind",
+    "seed": 100036,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 150,
+        "aggressor": 66,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100037",
+    "group": "blind",
+    "seed": 100037,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 175,
+        "aggressor": 16,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100038",
+    "group": "blind",
+    "seed": 100038,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 151,
+        "aggressor": 5,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100039",
+    "group": "blind",
+    "seed": 100039,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 219,
+        "aggressor": 66,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100040",
+    "group": "blind",
+    "seed": 100040,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 120,
+        "aggressor": 6,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100041",
+    "group": "blind",
+    "seed": 100041,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 116,
+        "aggressor": 188,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100042",
+    "group": "blind",
+    "seed": 100042,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 53,
+        "aggressor": 72,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100043",
+    "group": "blind",
+    "seed": 100043,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 198,
+        "aggressor": 232,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100044",
+    "group": "blind",
+    "seed": 100044,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 11,
+        "aggressor": 251,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100045",
+    "group": "blind",
+    "seed": 100045,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 1,
+        "victim": 145,
+        "aggressor": 155,
+        "value": 0,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100046",
+    "group": "blind",
+    "seed": 100046,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 2,
+        "victim": 185,
+        "aggressor": 106,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 3,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100047",
+    "group": "blind",
+    "seed": 100047,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 3,
+        "victim": 251,
+        "aggressor": 52,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100048",
+    "group": "blind",
+    "seed": 100048,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 4,
+        "victim": 251,
+        "aggressor": 19,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100049",
+    "group": "blind",
+    "seed": 100049,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 5,
+        "victim": 246,
+        "aggressor": 40,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100050",
+    "group": "blind",
+    "seed": 100050,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 6,
+        "victim": 16,
+        "aggressor": 224,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 1,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100051",
+    "group": "blind",
+    "seed": 100051,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 7,
+        "victim": 57,
+        "aggressor": 40,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 2,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100052",
+    "group": "blind",
+    "seed": 100052,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 8,
+        "victim": 42,
+        "aggressor": 67,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 4,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100053",
+    "group": "blind",
+    "seed": 100053,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 9,
+        "victim": 146,
+        "aggressor": 0,
+        "value": 0,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 32,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100054",
+    "group": "blind",
+    "seed": 100054,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 10,
+        "victim": 160,
+        "aggressor": 13,
+        "value": 1,
+        "trigger": 0,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 48,
+    "pass": 0,
+    "cycles": 3847
+  },
+  {
+    "name": "blind_100055",
+    "group": "blind",
+    "seed": 100055,
+    "mode": 0,
+    "pause": false,
+    "faults": [
+      {
+        "kind": 11,
+        "victim": 94,
+        "aggressor": 27,
+        "value": 1,
+        "trigger": 1,
+        "retention": 10000
+      }
+    ],
+    "operations": 2560,
+    "failures": 0,
+    "pass": 1,
+    "cycles": 3847
+  }
+]

@@ -1,0 +1,2 @@
+PASS seed=51 stop=1 operations=591 failures=1
+C:\Users\15354\Documents\ChatGPT\Engineer, HIG HBM Product & System Engineering\mbist_project\tb\tb_mbist.sv:118: $finish called at 7660000 (1ps)

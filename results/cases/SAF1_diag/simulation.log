@@ -1,0 +1,3 @@
+VCD info: dumpfile D:/ICVProject/Project/PE_Project/results/cases/SAF1_diag/wave.vcd opened for output.
+PASS seed=0 stop=0 operations=2560 failures=3
+D:\ICVProject\Project\PE_Project\tb\tb_mbist.sv:118: $finish called at 38470000 (1ps)

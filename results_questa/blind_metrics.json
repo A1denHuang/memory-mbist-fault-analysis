@@ -1,0 +1,7 @@
+{
+  "samples": 55,
+  "correct": 38,
+  "accuracy": 0.6909090909090909,
+  "candidate_hits": 55,
+  "candidate_inclusion": 1.0
+}

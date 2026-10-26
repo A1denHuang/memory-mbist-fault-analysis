@@ -1,0 +1,8 @@
+{
+  "generator": "SystemVerilog fault_cfg.randomize() in Questa",
+  "seeds": 60,
+  "initial_seed": 17,
+  "constraint_checks": "PASS",
+  "rtl_scoreboard_runs": 120,
+  "rtl_simulator": "iverilog"
+}

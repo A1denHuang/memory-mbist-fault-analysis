@@ -1,0 +1,8 @@
+{
+  "simulator": "iverilog",
+  "simulations": 283,
+  "random_seeds": 60,
+  "blind_seeds": 55,
+  "scoreboard": "all passed",
+  "sva": "portable procedural equivalents passed; native SVA not executed"
+}
